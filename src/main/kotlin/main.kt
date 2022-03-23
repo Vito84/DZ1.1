@@ -1,10 +1,11 @@
 package ru.netology
 
 fun main() {
-    val amount = 200000
-    val commission = ((amount / 100) * 75) / 100
+    val amount = 100000
+    val minCommission = 3500
+    val commission = ((amount / 100) * 0.75).toInt()
     println(
-        if (commission < 3500) "Ваша комиссия составляет 3500 копеек"
+        if (commission < minCommission) "Ваша комиссия составляет 3500 копеек"
         else "Ваша комиссия состовляет $commission копеек"
     )
 
